@@ -1,16 +1,3 @@
-<!--
-<div id="cookieprivacy" class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
-
-	<div class="banner">
-		<div class="row icon"></div>
-		<div class="row message"><?php echo $GLOBALS['TL_LANG']['cookiePrivacyPdir']['PRIVACY_MESSAGE'] ; ?></div>
-		<div class="row button"><a href=""><?php echo $GLOBALS['TL_LANG']['cookiePrivacyPdir']['PRIVACY_LINK_TEXT'] ?></a></div>
-		<div class="row close">x</div>
-	</div>
-</div>
--->
-Test: <?php echo $this->InfoPage; ?>
-
 <script type="text/javascript">
 	$(document).ready(function(){
 		$.cookieBar({
@@ -27,7 +14,3 @@ Test: <?php echo $this->InfoPage; ?>
 		});
 	});
 </script>
-
-<pre>
-<?php #print_r($this); ?>
-</pre>
