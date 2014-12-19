@@ -1,0 +1,33 @@
+<!--
+<div id="cookieprivacy" class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+
+	<div class="banner">
+		<div class="row icon"></div>
+		<div class="row message"><?php echo $GLOBALS['TL_LANG']['cookiePrivacyPdir']['PRIVACY_MESSAGE'] ; ?></div>
+		<div class="row button"><a href=""><?php echo $GLOBALS['TL_LANG']['cookiePrivacyPdir']['PRIVACY_LINK_TEXT'] ?></a></div>
+		<div class="row close">x</div>
+	</div>
+</div>
+-->
+Test: <?php echo $this->InfoPage; ?>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$.cookieBar({
+			message: '<?php echo $GLOBALS['TL_LANG']['cookiePrivacyPdir']['PRIVACY_MESSAGE'] ; ?>',
+			acceptButton: <?php echo $this->AcceptButton ?>,
+			acceptText: '<?php echo $GLOBALS['TL_LANG']['cookiePrivacyPdir']['PRIVACY_ACCEPT_TEXT'] ; ?>',
+			policyButton: <?php echo $this->PolicyButton ?>,
+			policyText: '<?php echo $GLOBALS['TL_LANG']['cookiePrivacyPdir']['PRIVACY_LINK_TEXT'] ?>',
+			policyURL: '<?php echo $this->InfoPage ?>',
+			expireDays: 365,
+			fixed: <?php echo $this->PopupFixed ?>,
+			bottom: <?php echo $this->PopupBottom ?>,
+			zindex: '300001',
+		});
+	});
+</script>
+
+<pre>
+<?php #print_r($this); ?>
+</pre>
