@@ -1,0 +1,7 @@
+#cookie-bar {background:#1979D7;color:#fff;height:3em;padding:1em 0;}
+#cookie-bar p:before {content: "!";font-size: 1.2em;padding: 2px 5px 0 5px;border-radius: 5px;margin-right: 10px;background: #fff;color: #000;}
+#cookie-bar a {color:#000; }
+#cookie-bar .cb-enable {background:#fff;}
+#cookie-bar .cb-enable:hover {background:#d2d2d2;color:#fff;}
+#cookie-bar .cb-policy {background:#fff;}
+#cookie-bar .cb-policy:hover {background:#d2d2d2;color:#fff;}

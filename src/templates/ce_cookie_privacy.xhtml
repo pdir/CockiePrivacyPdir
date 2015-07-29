@@ -1,0 +1,16 @@
+<script type="text/javascript">
+	$(document).ready(function(){
+		$.cookieBar({
+			message: '<?php echo $GLOBALS['TL_LANG']['cookiePrivacyPdir']['PRIVACY_MESSAGE'] ; ?>',
+			acceptButton: <?php echo $this->AcceptButton ?>,
+			acceptText: '<?php echo $GLOBALS['TL_LANG']['cookiePrivacyPdir']['PRIVACY_ACCEPT_TEXT'] ; ?>',
+			policyButton: <?php echo $this->PolicyButton ?>,
+			policyText: '<?php echo $GLOBALS['TL_LANG']['cookiePrivacyPdir']['PRIVACY_LINK_TEXT'] ?>',
+			policyURL: '<?php echo $this->InfoPage ?>',
+			expireDays: 365,
+			fixed: <?php echo $this->PopupFixed ?>,
+			bottom: <?php echo $this->PopupBottom ?>,
+			zindex: '300001',
+		});
+	});
+</script>

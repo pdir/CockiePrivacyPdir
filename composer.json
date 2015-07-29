@@ -1,0 +1,34 @@
+{
+  "name":"pdir/CockiePrivacyPdir",
+  "description":"An Cookie Privacy Frontend Module for Contao Open Source CMS",
+  "keywords":["contao", "cookie", "privacy", "policy", "law", "plugin", "bar", "message"],
+  "type":"contao-module",
+  "homepage":"https://github.com/pdir/CockiePrivacyPdir",
+  "license":"LGPL-3.0+",
+  "authors":[
+
+    {
+      "name":"Mathias Arzberger",
+      "email":"develop@pdir.de",
+      "homepage":"http://pdir.de",
+      "role":"Developer"
+    }
+
+  ],
+  "support":{
+    "issues":"https://github.com/pdir/CockiePrivacyPdir/issues",
+    "wiki":"https://github.com/pdir/CockiePrivacyPdir/wiki",
+    "source":"https://github.com/pdir/CockiePrivacyPdir" 
+  },
+  "require":{
+    "php":">=5.3",
+    "contao/core":">=3.2,<3.6"
+  },
+  "extra":{
+    "contao": {
+      "sources":{
+        "src": "system/modules/cookie_privacy"
+      }
+    }
+  }
+}
