@@ -40,15 +40,15 @@ class show extends \Module
 	 */
 	protected function compile()
 	{		
-		$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/cookie_privacy_pdir/assets/js/jquery.cookiebar.js';
+		$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/cookie_privacy_pdir/assets/js/jquery.cookiebar.js|static';
 		
 		$pdirPrivacyCSS = $this->arrData['pdir_privacy_cookie_css'];
 		if($pdirPrivacyCSS != 'nocss') {
-			$GLOBALS['TL_CSS'][] = 'system/modules/cookie_privacy_pdir/assets/css/jquery.cookiebar.css';
+			$GLOBALS['TL_CSS'][] = 'system/modules/cookie_privacy_pdir/assets/css/jquery.cookiebar.css||static';
 		}
 		if($pdirPrivacyCSS != 'nocss' AND $pdirPrivacyCSS != 'classic') {
-			$GLOBALS['TL_CSS'][] = 'system/modules/cookie_privacy_pdir/assets/css/jquery.cookiebar.css';
-			$GLOBALS['TL_CSS'][] = 'system/modules/cookie_privacy_pdir/assets/css/'.$pdirPrivacyCSS.'.css';
+			$GLOBALS['TL_CSS'][] = 'system/modules/cookie_privacy_pdir/assets/css/jquery.cookiebar.css||static';
+			$GLOBALS['TL_CSS'][] = 'system/modules/cookie_privacy_pdir/assets/css/'.$pdirPrivacyCSS.'.css||static';
 		}
 		
 		if($this->arrData['pdir_privacy_cookie_accept_button'] == 1)
